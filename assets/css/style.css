@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ /* Below items used for targeting the navigation bar */
+nav {
+    margin-right: 20px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+    
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+header {
+    padding: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* Condensed hX tags */
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+
+.background-img {
+    height: 1000px;
+    width: 100%;
+    background-image: url(../images/Dreaming-droid.jpg);
+    background-size: cover;
+    background-position: center;    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: black;
+}
+
+#About-me {
+    padding-right: 350px;
+}
+
+#Portfolio img {
+    border: aquamarine; border-style: solid;
+    margin: 20px
+}
+
+.Caption {
+    display: block;
+}
+
+.item {
+    vertical-align: top;
+    text-align: center;
+    width: 120px;
+}
+
+.colorin {
+    background-color: black;
+}
+
+/* Media quiries for page to adaptto screen sizes */
+@media screen and (max-width: 992px) {
+    .card {
+      width: 50%;
+    }
+   }
+
+@media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+}

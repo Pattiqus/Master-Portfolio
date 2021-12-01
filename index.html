@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Patrick Brown - Web Developer: Full Stack</title>
+</head>
+
+<body class="card">
+    <!-- creating header & links in Nav bar -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#About-me">About me</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Background image - created with CSS -->
+    <div class="background-img"><h1>Patrick <br> Brown</h1></div>
+
+    <!-- Flex Container for About me and Contact section -->
+    <section class="flex-container">
+        <article id="About-me">
+            <h2>About me</h2>
+                <p>Hi there! If you have come this far you may aswell learn some more about me!<br>
+                My name is Patrick and I am a Full stack Web developer. Currently looking for work!<br>
+                Please feel free to browse my portfolio on this site!
+                </p>
+        </article>
+
+        <article id="Contact">
+            <h2>Contact information</h2>
+                <p>Name: Patrick Brown<br>
+                    Email: <a href="Patticus.tv@gmail.com">Patticus.tv@gmail.com</a><br>
+                    Languages: English, Japanese<br>
+                    OS: Windows 10 x64
+                </p>
+        </article>
+    </section>
+
+    <!-- Section for Portfolio pictures and respective flex -->
+    <Section id="Portfolio" >
+        <!-- class to fix background colour -->
+        <div class="colorin">
+            <h2>Portfolio</h2><br>
+            <!-- seperate flex container for image that needs to be larger -->
+                        <div class="flex-container2">
+                            <img id="PrimaryProject" src = "assets/images/FirstAurora.jpg" alt="Aurora" width="500px" height="500px">
+                            <span class="Caption"><h3>Aurora</h3></span>
+                        </div>
+                        <!-- Flex container for 4 smaller projects -->
+                        <div class="flex-container3">
+                            <!-- Div for  -->
+                            <div class="item">
+                                <img id="SecondaryProjects" src = "assets/images/SecondWall.jpg" width="200px" height="200px">
+                                <span class="Caption"><h3>LED Wall</h3></span>
+                            </div>
+                            <div class="item">
+                                <img id="SecondaryProjects" src = "assets/images/ThirdCalculator.jpeg" width="200px" height="200px">
+                                <span class="Caption"><h3>Calculator</h3></span>
+                            </div>
+                            <div class="item">
+                                <img id="SecondaryProjects" src = "assets/images/FourthPuzzleImage.JPG" width="200px" height="200px">
+                                <span class="Caption"><h3>Puzzle</h3></span>
+                            </div class="item">
+                            <div class="item">
+                                <img id="SecondaryProjects" src = "assets/images/FifthRunningImage.JPG" width="200px" height="200px">
+                                <span class="Caption"><h3>Running</h3></span>
+                            </div>
+                        </div>
+    </Section>
+
+
+    
+</body>
+</html>
