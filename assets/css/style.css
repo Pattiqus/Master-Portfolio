@@ -115,15 +115,13 @@ p {
     background-color: black;
 }
 
-/* Media quiries for page to adaptto screen sizes */
-@media screen and (max-width: 992px) {
-    .card {
-      width: 50%;
+/* Media quiries for page to adapt to screen sizes */
+@media screen and (max-width: 800px) {
+    .flex-container {
+      flex-wrap: wrap;
     }
    }
-
-@media screen and (max-width: 768px) {
-    .card {
+    .flex-container article {
       width: 100%;
+      display: block;
     }
-}
