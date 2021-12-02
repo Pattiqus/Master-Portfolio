@@ -1,91 +1,181 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
     <title>Patrick Brown - Web Developer: Full Stack</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
 <body>
     <!-- creating header & links in Nav bar -->
     <header>
+        <h1>Patrick Brown</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#About-me">About me</a>
+                    <a href="#about-me">About me</a>
                 </li>
                 <li>
-                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#Contact">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Background image - created with CSS -->
-    <div class="background-img"><h1>Patrick <br> Brown</h1></div>
+    <div class="background-img"></div>
 
     <!-- Flex Container for About me and Contact section -->
-    <section class="flex-container">
-        <article id="About-me">
-            <h2>About me</h2>
-                <img src="assets/images/Me.jpg" width="200px" height="200px">
-                    <p>Hi there! If you have come this far you may aswell learn some more about me!<br>
-                    My name is Patrick and I am a Full stack Web developer. Currently looking for work!<br>
-                    Please feel free to browse my portfolio on this site!
-                    </p>
-        </article>
+    <section id="about-me" class="flex-container theme-blue">
 
-        <article id="Contact">
-            <h2>Contact information</h2>
-                <p>Name: Patrick Brown<br>
-                    Email: <a href="Patticus.tv@gmail.com">Patticus.tv@gmail.com</a><br>
-                    Languages: English, Japanese<br>
-                    OS: Windows 10 x64
-                </p>
-        </article>
+        <div class="section-container">
+
+            <aside class="section-left section-column one-qtr-col border-white">
+                <div class="title-container">
+                    <h2 class="section-title">About me</h2>
+                </div>
+            </aside>
+
+            <div class="section-right section-column full-col">
+                <div class="section-content">
+                    <article>
+                        <img src="assets/images/Me.jpg" width="400px" height="400px" class="inline-content-image fade-in-grey" />        
+                        <span class="font-theme-white">Hi there! If you have come this far you may aswell learn some more about me!<br>
+                        My name is Patrick and I am a Full stack Web developer. Currently looking for work!<br>
+                        Please feel free to browse my portfolio on this site!
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+       
     </section>
 
-    <!-- Section for Portfolio pictures and respective flex -->
-    <Section id="Portfolio" >
-        <!-- class to fix background colour -->
-        <div class="colorin">
-            <h2>Portfolio</h2><br>
-            <!-- seperate flex container for image that needs to be larger -->
-                        <div class="flex-container2">
-                            <div class="item">
-                                <img id="PrimaryProject" src = "assets/images/FirstAurora.jpg" alt="Aurora" width="500px" height="500px">
-                                <span class="Caption"><h3>Aurora</h3></span>
+
+    <!-- Flex Container for About me and Contact section -->
+    <section id="portfolio" class="flex-container theme-black">
+
+        <div class="section-container">
+
+            <aside class="section-left section-column one-qtr-col border-white">
+                <div class="title-container">
+                    <h2 class="section-title">Portfolio</h2>
+                </div>
+            </aside>
+
+            <div class="section-right section-column full-col mob-pad-0">
+                <div class="section-content">
+                    
+                    <!-- # Primary Project -->
+                    <div class="section-column full-col pad-bot-15">
+                        <div class="portfolio-item">
+                            <img id="PrimaryProject" src="assets/images/FirstAurora.jpg" alt="Aurora" width="500px" height="500px"  alt="Primary Project" title="Primary Project" class="full-width portfolio-animation" />
+                            <span class="caption"><h3>Aurora</h3></span>
+                            <div class="portfolio-item-overlay"></div>
+                        </div>
+                    </div>
+
+                    <!-- # Project Rows -->
+                    <div class="section-column full-col pad-top-15">
+                        <div class="section-container no-pad">
+                            <div class="section-column half-col pad-right-15">
+                                <div class="portfolio-item">
+                                    <img class="secondary-project portfolio-animation" src = "assets/images/SecondWall.jpg" alt="Secondary Project" title="Secondary Project" />
+                                    <span class="caption"><h3>LED Wall</h3></span>
+                                    <div class="portfolio-item-overlay"></div>
+                                </div>
+                            </div>
+
+                            <div class="section-column half-col pad-left-15">
+                                <div class="portfolio-item">
+                                    <img class="secondary-project portfolio-animation" src="assets/images/ThirdCalculator.jpeg" />
+                                    <span class="caption"><h3>Calculator</h3></span>
+                                    <div class="portfolio-item-overlay"></div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Flex container for 4 smaller projects -->
-                        <div class="flex-container3">
-                            <!-- Div for  -->
-                            <div class="item">
-                                <img id="SecondaryProjects" src = "assets/images/SecondWall.jpg" width="200px" height="200px">
-                                <span class="Caption"><h3>LED Wall</h3></span>
+                    </div>
+
+                    <!-- # Project Rows -->
+                    <div class="section-column full-col pad-top-15">
+                        <div class="section-container no-pad">
+                            <div class="section-column half-col pad-right-15">
+                                <div class="portfolio-item">
+                                    <img class="secondary-project portfolio-animation" src = "assets/images/FourthPuzzleImage.JPG" alt = "Puzzle Project" />
+                                    <span class="caption"><h3>Puzzle</h3></span>
+                                    <div class="portfolio-item-overlay"></div>
+                                </div>
                             </div>
-                            <div class="item">
-                                <img id="SecondaryProjects" src = "assets/images/ThirdCalculator.jpeg" width="200px" height="200px">
-                                <span class="Caption"><h3>Calculator</h3></span>
-                            </div>
-                            <div class="item">
-                                <img id="SecondaryProjects" src = "assets/images/FourthPuzzleImage.JPG" width="200px" height="200px">
-                                <span class="Caption"><h3>Puzzle</h3></span>
-                            </div>
-                            <div class="item">
-                                <img id="SecondaryProjects" src = "assets/images/FifthRunningImage.JPG" width="200px" height="200px">
-                                <span class="Caption"><h3>Running</h3></span>
+
+                            <div class="section-column half-col pad-left-15">
+                                <div class="portfolio-item">
+                                    <img class="secondary-project portfolio-animation" src = "assets/images/FifthRunningImage.JPG" />
+                                    <span class="caption"><h3>Running</h3></span>
+                                    <div class="portfolio-item-overlay"></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </Section>
+       
+    </section>
 
+    <section id="contact" class="flex-container theme-deepblack">
+
+        <div class="section-container">
+
+            <aside class="section-left section-column one-qtr-col border-white">
+                <div class="title-container">
+                    <h2 class="section-title">Contact information</h2>
+                </div>
+            </aside>
+
+            <div class="section-column full-col pad-top-15">
+                <div class="section-container no-pad">
+                    <div class="section-column half-col pad-right-15">
+                        <a href="#" class="contact-item">
+                            <!-- <img src = "assets/images/email-logo.png" alt="Secondary Project" title="Secondary Project" class="contact-logo email"/> -->
+                            <i class="fas fa-envelope contact-logo-fa email"></i>
+                            <span class="caption"><h3>Email</h3></span>
+                            <div class="portfolio-item-overlay"></div>
+                        </a>
+                    </div>
+
+                    <div class="section-column half-col pad-left-15">
+                        <a href="#" class="contact-item">
+                            <!-- <img src="assets/images/github-logo.png" class="contact-logo github" /> -->
+                            <i class="fab fa-github contact-logo-fa github"></i>
+                            <span class="caption"><h3>GitHub</h3></span>
+                            <div class="portfolio-item-overlay"></div>
+                        </a>
+                    </div>
+
+                    <div class="section-column three-qtr-col pad-left-15">
+                        <a href="#" class="contact-item">
+                            <!-- <img src="assets/images/linkedin-logo.png" class="contact-logo linked-in" /> -->
+                            <i class="fab fa-linkedin contact-logo-fa linkedin"></i>
+                            <span class="caption"><h3>LinkedIn</h3></span>
+                            <div class="portfolio-item-overlay"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+
+   
     <footer>
-
+        <h4>Pattiqus Industries</h4>
     </footer>
 
 

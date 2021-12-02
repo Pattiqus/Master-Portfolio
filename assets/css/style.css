@@ -3,13 +3,15 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-
+    font-size: 16px;
+    line-height: 24px;
 }
+
+
  /* Below items used for targeting the navigation bar */
 nav {
     margin-right: 20px;
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     list-style-type: none;
 }
@@ -38,15 +40,13 @@ header {
 
 /* Condensed hX tags */
 h1 {
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 75px;
+    font-size: 50px;
     color: white;
 }
 
 h2 {
     color: white;
-    text-align: center;
     font-size: 50px;
 }
 
@@ -55,13 +55,18 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: white;
+    font-size: 20px;
+}
+
 p {
     color: white;
 }
 
 
 .background-img {
-    height: 1000px;
+    height: 500px;
     width: 100%;
     background-image: url(../images/Dreaming-droid.jpg);
     background-size: cover;
@@ -71,10 +76,272 @@ p {
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
     background-color: black;
+}
+
+/**
+*   # Theme/Colours
+*/
+section.theme-blue {
+    background-color: navy;
+}
+
+section.theme-black {
+    background-color: #343434;
+}
+
+section.theme-deepblack {
+    background-color: black;
+}
+
+/**
+*   # Images
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img.fade-in-grey {
+    filter: grayscale( 60% );
+    transition: .35s ease all;
+}
+
+img.fade-in-grey:hover {
+    filter: none;
+}
+
+#portfolio .item {
+    transition: .35s ease all;
+}
+
+#portfolio .item:hover {
+    background: rgba(46, 74, 128, 1);
+}
+
+img.portfolio-animation {
+    display: block;
+    transition: .35s ease all;
+    border: aquamarine;
+    border-style: solid;
+    filter: sepia( 25% );
+}
+
+img.portfolio-animation:hover {
+    border-color: blueviolet;
+    filter: none;
+    cursor: pointer;
+}
+
+/* LOGOS */
+img.contact-animation:hover {
+    border-color: blueviolet;
+    filter: none;
+    cursor: pointer;
+}
+
+section#contact .contact-logo-fa.email {
+    color: #FFFFFF;
+}
+
+section#contact .contact-logo-fa.github {
+    color: #4078c0;
+}
+
+section#contact .contact-logo-fa.linkedin {
+    color: #0077b5;
+}
+
+section#contact .contact-logo-fa {
+    font-size: 36px;
+    line-height: 48px;
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+/**
+*   # Contact Item Link
+*/
+a.contact-item {
+    text-decoration: none;
+}
+
+/* a.contact-item:hover,  */
+a.contact-item:hover span h3 {
+    color: tomato;
+    transition: .35s ease all;
+}
+
+/* 
+section#contact img.contact-logo {
+    max-width: 125px;
+}
+
+section#contact img.contact-logo.github {
+    height: 125px;
+} */
+
+/**
+*  # Container/Wrappers
+*/
+section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-column.one-third-col  {
+    width: 33.3%
+}
+
+.section-column.two-third-col  {
+    width: 66.6%
+}
+
+.section-column.one-qtr-col  {
+    width: 25%
+}
+
+.section-column.half-col  {
+    width: 50%
+}
+
+.section-column.three-qtr-col  {
+    width: 75%
+}
+
+.section-column.full-col  {
+    width: 100%
+}
+
+.section-container aside.border-white {
+    border-right: 3px solid #FFFFFF;
+}
+
+.section-container aside.border-black {
+    border-right: 3px solid #000000;
+}
+
+.section-left,
+.section-right {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.section-left {
+    padding-right: 15px;
+}
+
+.section-right {
+    padding-left: 30px;
+}
+
+section .section-container .title-container .section-title {
+    display: block;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+section > .section-container {
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img.full-width {
+    width: 100%;
+    max-width: none;
+}
+
+img.inline-content-image {
+    display: inline;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    max-width: 250px;
+    float: left;
+    height: auto;
+}
+
+.font-theme-white {
+    color: #FFFFFF;
+}
+
+
+
+/**
+*   # Utility Classes
+*/
+
+.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.no-pad-top {
+    padding-top: 0;
+}
+
+.no-pad-bottom {
+    padding-bottom: 0;
+}
+
+.no-pad-left {
+    padding-left: 0;
+}
+
+.no-pad-right {
+    padding-right: 0;
+}
+
+.pad-top-15 {
+    padding-top: 15px;
+}
+
+.pad-bot-15 {
+    padding-bottom: 15px;
+}
+
+.pad-top-30 {
+    padding-top: 30px;
+}
+
+.pad-bot-30 {
+    padding-bottom: 30px;
+}
+
+.pad-right-15 {
+    padding-right: 15px;
+}
+
+.pad-left-15 {
+    padding-right: 15px;
+}
+
+
+
+/* 
+.title-container {
+    padding-right: 30px;
+} */
+
+#About-me {
+    padding-top: 200px;
 }
 
 .flex-container2 {
@@ -95,18 +362,78 @@ p {
     background-color: black;
 }
 
-#About-me {
-    padding-right: 350px;
-}
 
-#Portfolio img {
-    border: aquamarine; border-style: solid;
+
+/* #portfolio img {
+    border: aquamarine;
+    border-style: solid;
     margin: 20px
+} */
+
+
+
+img.secondary-project {
+    width: 100%;
+    max-height: 250px;
 }
 
-.Caption {
+
+.portfolio-item {
     display: block;
+    position: relative;
 }
+
+.portfolio-item .caption {
+    display: block;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    transform: translateY(25%);
+    padding-left: 15px;
+    padding-right: 15px;
+    background: aquamarine;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+    transition: .35s ease all;
+    
+}
+
+img.contact-item {
+    width: 100%;
+    max-height: 150px;
+}
+
+.contact-item {
+    display: block;
+    position: relative;
+}
+
+.portfolio-item:hover .caption { 
+    background-color: blueviolet;
+}
+.portfolio-item:hover .caption * { 
+    color: #FFFFFF;
+}
+
+.portfolio-item .caption * {
+    color: #000000;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(73, 21, 158, 0.35);
+    /* z-index: 999; */
+    transition: .35s ease all;
+}
+
 
 .item {
     vertical-align: top;
@@ -117,8 +444,26 @@ p {
     background-color: black;
 }
 
-/* Media quiries for page to adapt to screen sizes */
-@media screen and (max-width: 800px) {
+footer {
+    padding: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+/* Media queries for page to adapt to screen sizes */
+
+
+/**
+*   Device: Laptop/Midi 
+*/
+@media screen and (max-width: 1280px) {
+
+}
+
+/**
+*   Device: Tablet
+*/
+@media screen and (max-width: 767px) {
     .flex-container {
       flex-wrap: wrap;
     }
@@ -138,4 +483,67 @@ p {
     .flex-container3 {
         flex-wrap: wrap
     }
+}
+
+/**
+*   Device: Mobile
+*/
+@media screen and (max-width: 600px) {
+
+    
+    header h1, 
+    header nav,
+    header nav li {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header nav {
+        float: none;
+        margin-top: 30px;
+    }
+
+    .section-container aside.border-white,
+    .section-container aside.border-black {
+        border-right: 0;
+    }
+    
+
+    .section-container {
+        display: block;
+    }
+
+    img.inline-content-image {
+        float: none;
+        display: block;
+    }
+
+    .section-left,
+    .section-right {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .mob-pad-15 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .mob-pad-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-column.one-third-col,
+    .section-column.two-third-col,
+    .section-column.one-qtr-col,
+    .section-column.one-half-col,
+    .section-column.three-qtr-col,
+    .section-column.full-col  {
+        width: 100%
+    }
+    
+
 }
