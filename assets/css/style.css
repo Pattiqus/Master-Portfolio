@@ -127,6 +127,7 @@ img.portfolio-animation {
     border: aquamarine;
     border-style: solid;
     filter: sepia( 25% );
+    cursor: pointer;
 }
 
 img.portfolio-animation:hover {
