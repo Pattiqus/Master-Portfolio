@@ -3,13 +3,13 @@
 <body>
 Hello!
 
-My name is Patrick, and welcome to my portfolio!
-
+My name is Pat, and welcome to my portfolio!
+<br>
 Over the course of late 2021 to mid 2022, I have undertaken a a Web Development Bootcamp which is run by
 Monash University & Trilogy Education Services.
-
+<br>
 My goal is to be become and Full-time Full Stack Web developer and bring my creative skills to new heights over course of this exciting new career.
-
+<br>
 I am currently emplayed as an Analytics specialist within the ISD division at Toyota, I have extensive experiance as a product planner and project manager and look forward utilzing this skillset along with everything I have learnt in the bootcamp and personal study time.
 
 
@@ -36,7 +36,7 @@ https://pattiqus.github.io/Master-Portfolio/
 
 <h2>Screenshot:</h2>
 
-
+![portfolio-screenshot-readme](assets\images\portfolio-screenshot-readme.PNG)
 
 </br>
 

@@ -68,7 +68,7 @@ p {
 .background-img {
     height: 500px;
     width: 100%;
-    background-image: url(../images/Dreaming-droid.jpg);
+    background-image: url(../images/background-theme.jpg);
     background-size: cover;
     background-position: center;    
 }
@@ -85,11 +85,11 @@ p {
 *   # Theme/Colours
 */
 section.theme-blue {
-    background-color: navy;
+    background-color: black;
 }
 
 section.theme-black {
-    background-color: #343434;
+    background-color: black;
 }
 
 section.theme-deepblack {
@@ -272,7 +272,7 @@ img.inline-content-image {
     vertical-align: top;
     margin-right: 30px;
     margin-bottom: 30px;
-    max-width: 250px;
+    max-width: 350px;
     float: left;
     height: auto;
 }
