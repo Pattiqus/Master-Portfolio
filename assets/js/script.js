@@ -3,7 +3,9 @@ function navBurger() {
     var x = document.getElementById("myNavLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
-    } else {
+    } 
+    else {
       x.style.display = "block";
+      x.style.float = "right";
     }
   }

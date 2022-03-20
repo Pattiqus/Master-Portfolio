@@ -4,40 +4,88 @@
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-    font-family: "Ubuntu", "Nunito","Outfit", sans-serif;
-}
-
-
- /* Below items used for targeting the navigation bar */
-nav {
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
-    list-style-type: none;
-    display: flex;
-}
-
-
-nav a {
+    font-family: "Roboto";
+    background-color: #121212;
     color: white;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-left: 25px;
-    
-}
-
-nav a:hover {
-    color: aquamarine;
 }
 
 header {
-    padding: 30px;
+    display: flexbox;
+}
+ /* Below items used for targeting the navigation bar */
+nav {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+
+}
+
+nav .logo {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+nav i {
+    color: rgb(197, 71, 255);
+    font-size: 50px;
+    line-height: 5rem;
+}
+
+
+nav ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+
+nav a {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-decoration: none;
+    padding: 5px;
+    border: solid;
+    border-radius: 5px;
+    border-color:rgb(197, 71, 255);
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.navButton a {
+    line-height: 5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-right: 0.5rem;
+}
+
+nav a:hover {
+    color: rgb(197, 71, 255);
+    box-shadow: none;
+    filter: none;
+    transition: 1000ms;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .15);
+    filter: blur(0.5px);
+}
+
+header {
+    padding-bottom: 10px;
     font-family:Arial, Helvetica, sans-serif;
-    background-color: black;
 }
 
 nav .burgerIcon {
@@ -58,6 +106,7 @@ h2 {
 h3 {
     color: white;
     text-align: center;
+    background-color: transparent;
 }
 
 h4 {
@@ -81,15 +130,12 @@ p {
 .flex-container {
     display: flex;
     flex-direction: row;
-    /* padding-top: 100px;
-    padding-bottom: 100px; */
-    background-color: black;
 }
 
 /**
 *   # Theme/Colours
 */
-section.theme-blue {
+/* section.theme-blue {
     background-color: black;
 }
 
@@ -99,7 +145,7 @@ section.theme-black {
 
 section.theme-deepblack {
     background-color: black;
-}
+} */
 
 /**
 *   # Images
@@ -424,8 +470,7 @@ img.contact-item {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(73, 21, 158, 0.35);
-    /* z-index: 999; */
+    background-color: rgba(73, 21, 158, 0.35)!important;
     transition: .35s ease all;
 }
 
@@ -441,7 +486,6 @@ img.contact-item {
 
 footer {
     padding: 30px;
-    background-color: black;
     text-align: center;
 }
 
@@ -543,7 +587,6 @@ footer {
     /* Style the navigation menu */
     nav {
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
     position: relative;
     }
     
@@ -555,7 +598,7 @@ footer {
     /* Style navigation menu links */
     nav a {
         color: white;
-        padding: 14px 16px;
+        /* padding: 14px 16px; */
         text-decoration: none;
         font-size: 17px;
         display: block;
@@ -563,10 +606,15 @@ footer {
     
     nav .burgerIcon {
         visibility: visible!important;
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
     }
 
     /* Style the hamburger menu */
-    nav a.icon {
+    nav a.burgerIcon {
         background: none;
         display: solid!important;
         color: white!important;
@@ -574,13 +622,17 @@ footer {
         position: absolute;
         right: 0;
         top: 0;
+        float: right;
+        line-height: 0rem;
+        padding: 1rem;
+        margin-right: 0.5rem;
     }
     
     /* Add a grey background color on mouse-over */
-    nav a:hover {
+    /* nav a:hover {
         background-color: #ddd;
         color: black;
-    }
+    } */
     
     /* Style the active link (or home/logo) */
     .active {
