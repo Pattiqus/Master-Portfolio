@@ -141,7 +141,9 @@ p {
     color: white;
 }
 
-
+.banner {
+    
+}
 .background-img {
     height: 500px;
     width: 100%;
@@ -544,6 +546,10 @@ footer {
 
     .flex-container3 {
         flex-wrap: wrap
+    }
+
+    .hamburger{
+        display: block;
     }
 
     .hamburger.active .bar:nth-child(2){
