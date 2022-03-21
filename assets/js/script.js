@@ -1,10 +1,12 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function navBurger() {
-    var x = document.getElementById("myMobNavLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } 
-    else {
-      x.style.display = "block!important";
-    }
-  }
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))

@@ -10,52 +10,41 @@
 }
 
 header {
-    
+    background-color: #121212;
 }
  /* Below items used for targeting the navigation bar */
-nav {
-    width: 100%;
-    height: 7rem;
+.navbar {
+    min-height: 70px;
     display: flex;
-    position: fixed;
-    justify-content: center;
-    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
     z-index: 10000;
     background-color: #121212;
-
-
+    position: fixed;
+    width: 100%;
 }
 
-nav .logo {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
-nav i {
+
+nav .logo i {
     color: rgb(197, 71, 255);
     font-size: 50px;
     line-height: 5rem;
 }
+
+
 
 .fa-eye:before {
     content: "\f06e";
     padding: 20px;
 }
 
-nav ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-
-}
 
 nav a {
     cursor: pointer;
@@ -74,14 +63,14 @@ nav ul li{
     text-align: center;
 }
 
-.navButton a {
+/* .navButton a {
     line-height: 5rem;
     text-transform: uppercase;
     text-decoration: none;
     padding: 0.5em;
     margin-right: 0.5rem;
 
-}
+} */
 
 nav a:hover {
     color: rgb(197, 71, 255);
@@ -92,23 +81,39 @@ nav a:hover {
     filter: blur(0.5px);
 }
 
-header {
-    padding-bottom: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+.hamburger {
+    display: none;
+    cursor: pointer;
 }
 
-nav .burgerIcon {
-    visibility: hidden;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
 }
+
+/* header {
+    padding-bottom: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+} */
+
+/* nav .burgerIcon {
+    visibility: hidden;
+} */
 /* 
 .mobLinks {
     display: none;
 } */
 
-/* Hide the mobile Nav links */
+/* Hide the mobile Nav links
 #myMobileNavLinks {
-    display: none;
-}
+    visibility: hidden;
+} */
 
 /* Condensed hX tags */
 h1 {
@@ -601,74 +606,40 @@ footer {
     .section-column.full-col  {
         width: 100%
     }
-    
-    /* Style the navigation menu */
-    nav {
-    overflow: hidden;
-    position: relative;
-    }
-    
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    nav #myNavLinks {
-        display: none;
-    }
 
-    
-    /* Style navigation menu links */
-    nav a {
-        color: white;
-        /* padding: 14px 16px; */
-        text-decoration: none;
-        font-size: 16px;
+    .hamburger{
         display: block;
+
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #121212;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin:16px 0;
+    }
+
+    .nav-menu.active{
+        left:0;
     }
     
-    nav .burgerIcon {
-        visibility: visible!important;
-        display: block;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-
-    }
-
-    /* Style the hamburger menu */
-    nav a.burgerIcon {
-        background: none;
-        display: solid!important;
-        color: white!important;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        float: right;
-        line-height: 0rem;
-        padding: 1rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-
-    .fa-bars:before, .fa-navicon:before {
-        content: "\f0c9";
-        color: white;
-    }
-    
-    nav a {
-        margin-top: 1rem;
-    }
-
-    /* Add a grey background color on mouse-over */
-    /* nav a:hover {
-        background-color: #ddd;
-        color: black;
-    } */
-    
-    /* Style the active link (or home/logo) */
-    .active {
-        background-color: #04AA6D;
-        color: white;
-    }
-
 }
