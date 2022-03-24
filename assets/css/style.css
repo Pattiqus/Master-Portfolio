@@ -9,6 +9,10 @@
     color: white;
 }
 
+:root {
+    --blue: #0437F2
+}
+
 header {
     background-color: #121212;
 }
@@ -33,7 +37,7 @@ header {
 }
 
 nav .logo i {
-    color: rgb(197, 71, 255);
+    color: var(--blue);
     font-size: 50px;
     line-height: 5rem;
 }
@@ -53,8 +57,8 @@ nav a {
     text-decoration: none;
     padding: 5px;
     border: solid;
-    border-radius: 5px;
-    border-color:rgb(197, 71, 255);
+    border-radius: 10px;
+    border-color:var(--blue);
 }
 
 nav ul li{
@@ -73,7 +77,7 @@ nav ul li{
 } */
 
 nav a:hover {
-    color: rgb(197, 71, 255);
+    color: var(--blue);
     box-shadow: none;
     filter: none;
     transition: 1000ms;
@@ -86,6 +90,10 @@ nav a:hover {
     cursor: pointer;
 }
 
+.hamburger .bar:hover {
+    background-color: var(--blue);
+}
+
 .bar {
     display: block;
     width: 25px;
@@ -94,26 +102,8 @@ nav a:hover {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: white;
-
+    border-radius: 1px;
 }
-
-/* header {
-    padding-bottom: 10px;
-    font-family:Arial, Helvetica, sans-serif;
-} */
-
-/* nav .burgerIcon {
-    visibility: hidden;
-} */
-/* 
-.mobLinks {
-    display: none;
-} */
-
-/* Hide the mobile Nav links
-#myMobileNavLinks {
-    visibility: hidden;
-} */
 
 /* Condensed hX tags */
 h1 {
@@ -142,7 +132,8 @@ p {
 }
 
 .banner {
-    
+    width: 100%;
+    height: 500px;
 }
 .background-img {
     height: 500px;
@@ -239,10 +230,6 @@ section#contact .contact-logo-fa {
     padding-bottom: 5px;
 }
 
-/* #mobileNav {
-    display: none;
-} */
-
 /**
 *   # Contact Item Link
 */
@@ -255,15 +242,6 @@ a.contact-item:hover span h3 {
     color: rgb(197, 71, 255);
     transition: .35s ease all;
 }
-
-/* 
-section#contact img.contact-logo {
-    max-width: 125px;
-}
-
-section#contact img.contact-logo.github {
-    height: 125px;
-} */
 
 /**
 *  # Container/Wrappers
