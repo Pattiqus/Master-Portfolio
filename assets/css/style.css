@@ -67,14 +67,6 @@ nav ul li{
     text-align: center;
 }
 
-/* .navButton a {
-    line-height: 5rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.5em;
-    margin-right: 0.5rem;
-
-} */
 
 nav a:hover {
     color: var(--ultramarineblue);
@@ -191,7 +183,7 @@ img.fade-in-grey:hover {
 img.portfolio-animation {
     display: block;
     transition: .35s ease all;
-    border: aquamarine;
+    border: var(--ultramarineblue);
     border-style: solid;
     filter: sepia( 25% );
     cursor: pointer;
@@ -435,7 +427,25 @@ img.secondary-project {
     transform: translateY(25%);
     padding-left: 15px;
     padding-right: 15px;
-    background: aquamarine;
+    background: var(--ultramarineblue);
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 100px;
+    text-align: center;
+    transition: .35s ease all;
+    
+}
+
+.portfolio-item .caption2 {
+    display: block;
+    position: absolute;
+    bottom: 12.5%;
+    left: 0;
+    transform: translateY(25%);
+    padding-left: 15px;
+    padding-right: 15px;
+    background: var(--ultramarineblue);
     border-radius: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -456,6 +466,10 @@ img.contact-item {
 }
 
 .portfolio-item:hover .caption { 
+    background-color: blueviolet;
+}
+
+.portfolio-item:hover .caption2 { 
     background-color: blueviolet;
 }
 .portfolio-item:hover .caption * { 
