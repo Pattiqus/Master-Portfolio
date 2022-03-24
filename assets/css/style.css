@@ -186,13 +186,13 @@ img.portfolio-animation {
     border: var(--ultramarineblue);
     border-style: solid;
     filter: sepia( 25% );
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 img.portfolio-animation:hover {
     border-color: blueviolet;
     filter: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 /* LOGOS */
@@ -440,7 +440,7 @@ img.secondary-project {
 .portfolio-item .caption2 {
     display: block;
     position: absolute;
-    bottom: 12.5%;
+    bottom: 7.5%;
     left: 0;
     transform: translateY(25%);
     padding-left: 15px;
@@ -467,16 +467,25 @@ img.contact-item {
 
 .portfolio-item:hover .caption { 
     background-color: blueviolet;
+    cursor: pointer;
 }
 
 .portfolio-item:hover .caption2 { 
     background-color: blueviolet;
+    cursor: pointer;
 }
 .portfolio-item:hover .caption * { 
     color: #FFFFFF;
 }
+.portfolio-item:hover .caption2 * { 
+    color: #FFFFFF;
+}
 
 .portfolio-item .caption * {
+    color: #000000;
+}
+
+.portfolio-item .caption2 * {
     color: #000000;
 }
 
